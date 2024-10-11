@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo: #FCF5E5;
+    --cor-secundaria: #e8d099;
+    --fonte: "Cormorant Unicase", serif;
+    --corfonte: black;
+    --fonte-secundaria: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.espada {
+    width: 40%;
+    position: static;
+}
+
+.container {
+    background-color: var(--fundo);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 0.3rem solid var(--corfonte);
+    width: 100%;
+    margin: 0.5rem 2rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 5rem 0 5rem;
+}
+
+.cabecalho-container {
+    display: flex;
+    width: 100%;
+    margin: 1rem auto;
+    border-top: 0.3rem solid var(--corfonte);
+}
+
+.cabecalho {
+    font-size: 4em;
+    font-style: bold;
+    padding: 2rem;
+    text-align: center;
+}
+
+.flor {
+    width: 5rem;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 1rem auto;
+    padding: 1rem;
+    gap: 2rem;
+    border-bottom: 0.3rem solid black;
+}
+
+.input {
+    width: 15rem;
+    height: 1.5rem;
+    background-color: var(--fundo);
+}
+.input::placeholder {
+    opacity: 1;
+}
+
+.lista {
+    width: 15rem;
+    height: 2rem;
+    background-color: var(--fundo);
+}
+
+.indicador {
+    width: 10rem;
+    font-size: 1.5rem;
+}
+.personagem {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 2rem;
+    width: 30rem;
+    font-family: var(--fonte-secundaria);
+}
+.personagem2 {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 2rem;
+    width: 30rem;
+    font-family: var(--fonte-secundaria);
+    display: none;
+}
+.romario {
+    width: 5%;
+}
+
+.botao {
+    background-color: var(--cor-secundaria);
+    padding: 1.5rem;
+    border: 0.3rem solid var(--corfonte);
+    font-family: var(--fonte);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    display: block;
+}
+
+.botao2 {
+    background-color: var(--cor-secundaria);
+    padding: 1.5rem;
+    border: 0.3rem solid var(--corfonte);
+    font-family: var(--fonte);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.easter {
+    color: var(--fundo);
+}
+.easter-rise {
+    color: var(--corfonte);
+}
+
+.botao:hover {
+    background-color: rgb(221, 167, 85);
+}
+.botao2:hover {
+    background-color: rgb(221, 167, 85);
+}
+
+.telefone {
+    display: block;
+    margin: 1rem auto;
+    height: 2rem;
+    width: 50%;
+}
+
+.zap {
+    background-color: #25D366;
+    border: 10px solid white;
+    color: white;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.helicopter {
+    display: block;
+    margin: 0 auto;
+    width: 30vw;
+}
+.ryan {
+    margin-top: 150vh;
+}
+
+@media screen and (max-width: 620px){
+    .espada {
+        display: none;
+    }
+    .cabecalho {
+        font-size: 2em;
+    }
+    .cabecalho-container {
+        justify-content: center;
+        width: 90vw;
+    }
+    .flor {
+        width: 10vw;
+    }
+    .container {
+        width: 90vw;
+    }
+    .indicador {
+        width: 20vw;
+        font-size: 1em;
+    }
+    .input {
+        width: 35vw;
+        height: 1.2rem;
+    }
+    
+    .lista {
+        width: 35vw;
+        height: 1.2rem;
+    }
+    .personagem {
+        width: 80vw;
+        font-size: 0.8rem;
+    }
+    #nome::placeholder {
+        font-size: 0.7rem;
+        opacity: 1;
+    }
+    #sobrenome::placeholder {
+        font-size: 0.7rem;
+        opacity: 1;
+    }
+    .romario {
+        width: 8vw;
+    }
+    .personagem2 {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .indicador {
+        width: 20vw;
+        font-size: 0.9em;
+    }
+    .romario {
+        width: 8vw;
+    }
+    .input::placeholder{
+        font-size: 5px;
+    }
+    .personagem2 {
+        width: 80vw;
+    }
+}

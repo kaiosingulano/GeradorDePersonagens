@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Personagens</title>
+</head>
+<body>
+    <img src="./img/espada.svg" alt="espada" class="espada">
+    <section class="bloco">
+        <section class="cabecalho-container">
+            <img src="./img/flordelis1.svg" alt="Flor de Lis" class="flor">
+            <h1 class="cabecalho">Gerador de Personagens</h1>
+            <img src="./img/flordelis1.svg" alt="Flor de Lis" class="flor">
+        </section>
+        <section class="container">
+            <form class="linha" id="caixa-nome">
+                <label class="indicador">Nome:</label>
+                <input type="text" placeholder="Deixe vazio para aleatório" class="input" id="nome">
+            </form>
+            <form class="linha" id="caixa-sobrenome">
+                <label class="indicador">Sobrenome:</label>
+                <input type="text" placeholder="Deixe vazio para aleatório" class="input" id="sobrenome">
+            </form>
+            <div class="linha">
+                <label class="indicador">Raça:</label>
+                <select class="lista" id="raca">
+                    <option>Aleatório</option>
+                    <option>Humano</option>
+                    <option>Elfo</option>
+                    <option>Meio-elfo</option>
+                    <option>Anão</option>
+                    <option>Halfling</option>
+                    <option>Meio-Orc</option>
+                </select>
+            </div>
+            <div class="linha">
+                <label class="indicador">Gênero:</label>
+                <select class="lista" id="genero">
+                    <option>Aleatório</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Helicóptero Apache</option>
+                    <option>E-girl</option>
+                    <option>WhatsApp 2</option>
+                    <option>Ryan Gosling</option>
+                </select>
+            </div>
+            <div class="linha">
+                <label class="indicador">Classe:</label>
+                <select class="lista" id="classe">
+                    <option>Aleatório</option>
+                    <option>Nenhuma</option>
+                    <option>Guerreiro</option>
+                    <option>Ladino</option>
+                    <option>Paladino</option>
+                    <option>Monge</option>
+                    <option>Patrulheiro</option>
+                    <option>Bárbaro</option>
+                    <option>Bardo</option>
+                    <option>Clérigo</option>
+                    <option>Mago</option>
+                    <option>Feiticeiro</option>
+                    <option>Bruxo</option>
+                    <option>Druida</option>
+                    <option>Artífice</option>
+                </select>
+            </div>
+            <div class="linha">
+                <label class="indicador">Idade:</label>
+                <select class="lista" id="idade">
+                    <option>Aleatório</option>
+                    <option>Criança</option>
+                    <option>Jovem</option>
+                    <option>Adulto</option>
+                    <option>Meia-idade</option>
+                    <option>Tábua da beirada</option>
+                </select>
+            </div>
+            <div class="linha">
+                <label class="indicador">Background:</label>
+                <select class="lista" id="background">
+                    <option>Aleatório</option>
+                    <option>Não, porque meu personagem é um NPC e não um aventureiro</option>
+                    <option>Não, porque eu sei o passado do meu fulaninho</option>
+                    <option>NÃO, porque eu gosto de Caps Lock</option>
+                    <option>No, porque o pai é poliglota</option>
+                    <option>Não seria o propósito da folha o de cair?</option>
+                    <option>Nein, mein Charakter mag keine Juden</option>
+                    <option>Tá bom, já deu (ainda é um não)</option>
+                </select>
+            </div>
+            <div class="linha">
+                <label class="indicador">Peculiaridade:</label>
+                <select class="lista" id="peculiaridade">
+                    <option>Aleatório</option>
+                    <option>Não?</option>
+                </select>
+            </div>
+            <p class="personagem"></p>
+            <p class="personagem2"></p>
+            <button onclick="gerarPersonagem()" class="botao">Gerar Personagem</button>
+            <button onclick="reiniciarGerador()" class="botao2">Reiniciar Gerador</button>
+            <p class="easter">BOIOLA!</p>
+            <a onclick="romario()"><img class="romario" src="/Projetos/Gerador de Personagens/img/romario.png" alt="romário"></a>
+        </section>
+    </section>
+    <img src="./img/espada.svg" alt="espada" class="espada">
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
