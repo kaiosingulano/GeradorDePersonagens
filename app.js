@@ -13,18 +13,36 @@ function gerarPersonagem () {
         descricaoPersonagem.innerHTML = `Sua personagem provavelmente se chama na internet de "dark.waifu", "night_lady" ou coisa do tipo, e deve ser da classe Biscoiteira de Rede Social ou então da classe Só Fico em Casa Lendo Fanfic de Vampiro e Assistindo Orgulho e Preconceito. Mas assim, por segurança, me passa o número da sua personagem aí, um amigo meu tá pedindo: <input type="tel" placeholder="Te juro que é pra um amigo" class="telefone"><button class="zap" onclick="zipzop()">Submeter ZipZop</button>`
         botao.style.display = "none";
         botao2.style.display = "block";
+        travarOpcao('raca');
+        travarOpcao('genero');
+        travarOpcao('classe');
+        travarOpcao('idade');
+        travarOpcao('background');
+        travarOpcao('peculiaridade');
         return
     }
     if (generoEscolhido == "WhatsApp 2") {
         descricaoPersonagem.innerHTML = `ERRO! Geração de personagens do gênero Whatsapp 2 está disponível apenas para usuários PREMIUM. Estamos com as últimas vagas de beta gratuitas abertas para testagem. Para garantir a sua vaga como beta tester, clique no gentil corvo ao final da página.`
         botao.style.display = "none";
         botao2.style.display = "block";
+        travarOpcao('raca');
+        travarOpcao('genero');
+        travarOpcao('classe');
+        travarOpcao('idade');
+        travarOpcao('background');
+        travarOpcao('peculiaridade');
         return
     }
     if (generoEscolhido == "Ryan Gosling") {
         descricaoPersonagem.innerHTML = `Coloque o áudio abaixo para tocar, e comece a descer a página lentamente para obter seu personagem. <audio class="helicopter" controls><source src="./audio/ryan.mp3"></audio><p class="ryan">Seu personagem é...</p><p class="ryan">literalmente eu.</p>`
         botao.style.display = "none";
         botao2.style.display = "block";
+        travarOpcao('raca');
+        travarOpcao('genero');
+        travarOpcao('classe');
+        travarOpcao('idade');
+        travarOpcao('background');
+        travarOpcao('peculiaridade');
         return
     }
 
@@ -134,6 +152,12 @@ function gerarPersonagem () {
         descricaoPersonagem.innerHTML = `Seu personagem se chama ${personagemFinal[2]} ${personagemFinal[3]}, é o principal helicóptero de ataque do Exército dos Estados Unidos, sucessor do AH-1 Cobra. Este é considerado atualmente o melhor helicóptero de ataque do mundo, sendo empregado em diversos ambientes hostis e com elevadas taxas de sucesso em suas missões. O AH-64 Apache possui um rotor principal de quatro pás e um rotor de cauda de quatro pás. A tripulação senta em conjunto, com o piloto sentado atrás e acima do co-piloto/artilheiro. O modelo avançado, o AH-64D Apache Longbow, está equipado com uma suite de sensores e armamento melhorados. A melhoria de destaque deste modelo sobre a variante A é o Longbow Fire Control Radar, instalado sobre o rotor principal. A posição elevada da redoma permite a detecção e ataque por míssil a alvos localizados atrás de obstáculos (como terreno, árvores ou edifícios). Além disso, seu personagem faz: <audio class="helicopter" controls><source src="./audio/helicopter.mp3"></audio>`
         botao.style.display = "none";
         botao2.style.display = "block";
+        travarOpcao('raca');
+        travarOpcao('genero');
+        travarOpcao('classe');
+        travarOpcao('idade');
+        travarOpcao('background');
+        travarOpcao('peculiaridade');
         return
     }
 
